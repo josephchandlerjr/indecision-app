@@ -1,8 +1,10 @@
-console.log('app.js is running')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import IndecisionApp from './components/IndecisionApp'
 
-//JSX - JavaScript XML
+import 'normalize.css/normalize.css'
+import './styles/styles.scss'
 
-let appRoot = document.getElementById('app')
-let template = <h1>Indecision App</h1>
-ReactDOM.render(template, appRoot)
 
+
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'))
